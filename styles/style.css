@@ -1,0 +1,217 @@
+:root{
+  --primary-color: #AA4465;
+  --secondary-color:#E8AEB7;
+  --accent-color:#C884A6;
+  --bg-color:#E7BBE3;
+  --shadow-color:#C884A6;
+  font-family: helvetica;
+  box-sizing: border-box;
+  /*Select your own color scheme at coolors.co*/
+
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+nav{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  position: fixed;
+  width: 100%
+}
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+  transition: backround-color 0.5s;
+
+}
+
+
+nav a:first-child{
+  margin-left: 10%;
+  margin-right: auto;
+
+
+}
+
+nav a:last-child{
+  margin-right: 10%;
+}
+
+nav a:hover{
+  background: var(..accent-color);
+  color: var(..secondary-color);
+  cursor: pointer;
+}
+nav ul{
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+nav ul li{
+  list-style-type: none;
+  padding: 1em;
+
+}
+
+nav ul li:first-child{
+  margin-left:10%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+nav ul li:hover{
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+header{
+  display: flex;
+  height: 100vh;
+  background-image: url(../images/Elegant-lines.jpg);
+  background-size: cover;
+}
+
+div.headerfigure{
+  margin: auto;
+  width: 200px;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+
+
+header img{
+  width: 100%;
+  box shadow: 5px 5px 3px rgba(0,0,0,0.10);
+  border-radius: 10px;
+
+}
+
+
+header div.headerfigure h2,
+header div.headerfigure p {
+  text-align: center;
+  margin: 0:auto;
+}
+
+/*quote block  css*/
+blockquote {
+  margin: 3em auto;
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  width: 60%;
+}
+
+blockquote #saidby{
+  text-align: right;
+  font-size: 0.8;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-gap: 30px;
+  justify-content: center;
+  background-color: pink;
+
+}
+
+
+main figure {
+  margin: 0;
+  border r: 1px solid var(..shadow-color);
+  border-radius: 5px
+}
+
+main figure img{
+  width: 100%;
+
+}
+
+main figure figcaption h2,
+main figcaption p{
+  color: var(--primary-color);
+  text-align:center;
+  margin: 0;
+  margin-top: 0;
+  padding: 0em;
+}
+
+main a{
+  text-decoration: none;
+
+
+}
+/*forms styling css*/
+
+#contact{
+  margin: 3em auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-gap: 3em;
+
+}
+
+input[type=text],select,textarea{
+  margin: 5px 0;
+  width: 100%;
+  padding: 1em;
+  border: 0 solid white;
+  background: var(--bg-color);
+  border-left:  5px solid var(--primary-color);
+  border-radius: 0;
+  resize: vertical;
+}
+
+input[type=submit]{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 100%
+}
+
+input[type=submit]:hover{
+  margin-top: 5px;
+  background-color: var(--secondary-color);
+}
+/*end of form*/
+
+#contact iframe{
+  width: 100%;
+  height: 100%;
+  min-width: 280px;
+  min-height: 280px;
+}
+
+
+footer ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  background: var(--primary-color);
+}
